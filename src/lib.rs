@@ -3,7 +3,6 @@
 
 use core::fmt;
 
-#[derive(Default)]
 pub struct Cursor<T> {
     pub data: T,
     pub offset: usize,
@@ -75,7 +74,7 @@ impl<T: Clone> Clone for Cursor<T> {
     fn clone(&self) -> Self {
         Self {
             data: self.data.clone(),
-            offset: self.offset.clone(),
+            offset: self.offset,
         }
     }
 }

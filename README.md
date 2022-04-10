@@ -1,4 +1,4 @@
-A simple cursor implementation for reading data from array.
+A simple cursor implementation for reading data from array slice.
 It's similar to `std::io::Cursor` from std library.
 
 ## Usage
